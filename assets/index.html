@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="starter-template.css">
+
+    <title>Screener</title>
+</head>
+<body>
+    <!-- Create header for stock screener and create fields for file reader input-->
+    <!-- <h1>Stock Screener</h1> -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6-m-auto">
+                <h2 class="text-center display-4 my-4">Stock Screener</h2>
+                <form action="/upload" method="post" enctype="multipart/form-data">
+                    <div class="custom-file mb-3">
+                        <input type="file" name="file" id="file" class="custom-file-input">
+                        <label for="file" class="custom-file-label">Choose File</label>
+                    </div>
+                    <input type="submit" value="submit" class="btn btn-primary btn-block">
+                </form>
+            </div>
+            <div class="col">
+                <button onclick="button()"> Open File </button>
+            </div>
+        </div>
+
+
+
+
+
+
+    <!-- <form action="index.php" method="post" enctype="multipart/form-data">
+        <input type="file" name="fileToUpload" id="fileToUpload">
+        <input type="submit" value="Upload File" name="submit">
+    </form> -->
+    <!-- <button omclick="button()"> Open File </button> -->
+
+<!-- <input type="file" id="fileinput" />
+<div id=""textContainer></div> -->
+
+ <!-- attach page to server.js-->   
+<script src="server.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
